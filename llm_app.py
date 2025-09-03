@@ -35,7 +35,7 @@ def get_llm_response(text: str, expert: str) -> str:
 	if not openai_api_key:
 		return "OpenAI APIキーが設定されていません。Streamlit CloudのSecrets管理でOPENAI_API_KEYを登録してください。"
 	# langchain==0.1.14以降はapi_key引数
-	llm = OpenAI(api_key=openai_api_key, temperature=0.7)
+	llm = OpenAI(api_key=openai_api_key, temperature=0.7, max_tokens=512)
 	chain = prompt | llm
 	response = chain.invoke({"input": text})
 	return response
