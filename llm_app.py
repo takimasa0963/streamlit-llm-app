@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.prompts import ChatPromptTemplate
@@ -48,4 +46,3 @@ if st.button("送信"):
 		st.write(answer)
 	else:
 		st.warning("質問内容を入力してください。")
-
