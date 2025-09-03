@@ -1,4 +1,4 @@
-#!/Users/01018607/Desktop/streamlit-llm-app/env/bin/python3.11
+#!/Users/01018607/Desktop/streamlit-llm-app/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
